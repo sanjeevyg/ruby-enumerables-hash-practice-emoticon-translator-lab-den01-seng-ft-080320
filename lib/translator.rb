@@ -1,12 +1,41 @@
 # require modules here
 
-def load_library
-  # code goes here
+require "pry"
+
+def load_library(file_path)
+# code goes 
+require "yaml"
+emoticons = YAML.load_file(file_path)
+new_hash = {}
+emoticons.each {|key, value|
+   if !new_hash[key]
+     new_hash[key] = {}
+   end 
+   if !new_hash[key][:english]
+      new_hash[key][:english] = value[0]
+   end 
+   if !new_hash[key][:japanese]
+   new_hash[key][:japanese] = value[1]
+   end 
+}
+new_hash
 end
 
-def get_japanese_emoticon
+
+
+def get_japanese_emoticon("./lib/emoticons.yml", symbol)
+  hash_1 = load_library("./lib/emoticons.yml")
+  hash_1.each {|key, value|
+    value.each {|key_1, value_1|
+      if symbol == key[:japanese]
+        key[:english]
+      end
+    }
+  }
+
   # code goes here
 end
+binding.pry
 
 def get_english_meaning
   # code goes here
