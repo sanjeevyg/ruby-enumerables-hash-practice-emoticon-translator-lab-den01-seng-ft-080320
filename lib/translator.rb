@@ -27,7 +27,6 @@ def get_japanese_emoticon(file_path, symbol)
   hash_1 = load_library("./lib/emoticons.yml")
   hash_1.each {|key, value|
     value.each {|key_1, value_1|
-    binding.pry
       if symbol == key[:japanese]
         key[:english]
       end
