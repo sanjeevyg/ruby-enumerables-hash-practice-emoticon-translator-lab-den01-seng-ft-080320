@@ -39,4 +39,13 @@ end
 
 def get_english_meaning
   # code goes here
+   hash_1 = load_library(file_path)
+  hash_1.each {|key, value|
+    value.each {|key_1, value_1|
+      if emoticon == hash_1[key][:english]
+         return emoticon = hash_1[key][:japanese]
+      end
+    }
+  }
+  return "Sorry, that emoticon was not found"
 end
