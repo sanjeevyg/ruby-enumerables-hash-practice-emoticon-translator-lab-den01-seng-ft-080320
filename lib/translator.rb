@@ -29,10 +29,11 @@ def get_japanese_emoticon(file_path, symbol)
     value.each {|key_1, value_1|
       if symbol == key[:japanese]
         p key[:english]
+        binding.pry
       end
     }
   }
-binding.pry
+
   # code goes here
 end
 
