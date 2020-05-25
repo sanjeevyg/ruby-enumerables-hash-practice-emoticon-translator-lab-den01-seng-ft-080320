@@ -29,7 +29,6 @@ def get_japanese_emoticon(file_path, emoticon)
     value.each {|key_1, value_1|
       if emoticon == hash_1[key][:english]
          return emoticon = hash_1[key][:japanese]
-      else 
          return "Sorry, that emoticon was not found"
       end
     }
