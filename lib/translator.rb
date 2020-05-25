@@ -29,6 +29,8 @@ def get_japanese_emoticon(file_path, emoticon)
     value.each {|key_1, value_1|
       if emoticon == hash_1[key][:english]
          emoticon = hash_1[key][:japanese]
+      else 
+        
       end
     }
   }
