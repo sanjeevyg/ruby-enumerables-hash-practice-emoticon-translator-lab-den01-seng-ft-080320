@@ -28,14 +28,14 @@ def get_japanese_emoticon(file_path, symbol)
   hash_1.each {|key, value|
     value.each {|key_1, value_1|
     binding.pry
-      if symbol == key[:japanese]
+      if key_1 == :japanese
         
-        p key[:english]
+        symbol = key[:english]
         
       end
     }
   }
-
+symbol
   # code goes here
 end
 
