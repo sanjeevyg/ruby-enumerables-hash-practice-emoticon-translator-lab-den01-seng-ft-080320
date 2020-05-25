@@ -28,13 +28,12 @@ def get_japanese_emoticon(file_path, emoticon)
   hash_1.each {|key, value|
     value.each {|key_1, value_1|
       if emoticon == hash_1[key][:english]
-         emoticon = hash_1[key][:japanese]
+         p emoticon = hash_1[key][:japanese]
       else 
          p "sorry"
       end
     }
   }
-emoticon
 end
 
 
