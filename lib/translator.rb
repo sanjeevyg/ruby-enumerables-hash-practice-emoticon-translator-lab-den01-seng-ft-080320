@@ -27,18 +27,14 @@ def get_japanese_emoticon(file_path, emoticon)
   hash_1 = load_library("./lib/emoticons.yml")
   hash_1.each {|key, value|
     value.each {|key_1, value_1|
-    
       if key_1 == :japanese
-        
         emoticon = key[:english]
-        
       end
     }
   }
 emoticon
-  # code goes 
-
 end
+
 
 
 def get_english_meaning
