@@ -32,10 +32,10 @@ def get_japanese_emoticon(file_path, symbol)
       end
     }
   }
-
+binding.pry
   # code goes here
 end
-binding.pry
+
 
 def get_english_meaning
   # code goes here
