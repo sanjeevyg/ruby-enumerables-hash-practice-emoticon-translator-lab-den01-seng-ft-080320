@@ -30,7 +30,7 @@ def get_japanese_emoticon(file_path, emoticon)
       if emoticon == hash_1[key][:english]
          p emoticon = hash_1[key][:japanese]
       else 
-         p "sorry"
+         p "Sorry, that emoticon was not found"
       end
     }
   }
