@@ -43,7 +43,7 @@ def get_english_meaning(file_path, emoticon)
   hash_1.each {|key, value|
     value.each {|key_1, value_1|
       if emoticon == hash_1[key][:japanese]
-         return emoticon = hash_1[key][:english]
+         return key
       end
     }
   }
